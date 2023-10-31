@@ -1,13 +1,6 @@
 version: 0.0
 os: linux
 
-artifacts:
-  files:
-    - '**/*'
-  base-directory: base_dir
-  name: build-artifact-name
-  discard-paths: no
-
 hooks:
   ApplicationStop:
     - location: scripts/stop_container.sh
